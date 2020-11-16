@@ -1,0 +1,141 @@
+import * as React from "react"
+import Svg, {
+  RadialGradient,
+  Stop,
+  Path,
+  LinearGradient,
+} from "react-native-svg"
+
+function SvgComponent() {
+  return (
+    <Svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 64 64"
+      width={64}
+      height={64}
+    >
+      <RadialGradient
+        id="prefix__a"
+        cx={32.5}
+        cy={32.5}
+        r={30.5}
+        gradientUnits="userSpaceOnUse"
+        spreadMethod="reflect"
+      >
+        <Stop offset={0} stopColor="#b8efff" />
+        <Stop offset={0.642} stopColor="#d4f6ff" />
+        <Stop offset={1} stopColor="#e5faff" />
+      </RadialGradient>
+      <Path
+        fill="url(#prefix__a)"
+        d="M60.357 47H57a2 2 0 110-4h.412c1.139 0 2.202-.721 2.497-1.821A2.508 2.508 0 0057.5 38H42V27h14c2.335 0 4.22-2.028 3.979-4.41-.21-2.075-2.082-3.59-4.168-3.59H46a2 2 0 110-4h6.357c1.308 0 2.499-.941 2.63-2.242A2.5 2.5 0 0052.5 10h-8a1.5 1.5 0 010-3h3.857c1.308 0 2.499-.941 2.63-2.242A2.5 2.5 0 0048.5 2H15.643c-1.308 0-2.499.941-2.63 2.242A2.5 2.5 0 0015.5 7H19a2 2 0 110 4H6.189c-2.086 0-3.958 1.514-4.168 3.59C1.78 16.972 3.665 19 6 19h2.5a3.5 3.5 0 110 7H7c-2.086 0-3.958 1.514-4.168 3.59C2.591 31.972 4.476 34 6.811 34H22v12H7.588c-1.139 0-2.202.721-2.497 1.821A2.508 2.508 0 007.5 51H9a2 2 0 110 4H6.189c-2.086 0-3.958 1.514-4.168 3.59C1.78 60.972 3.665 63 6 63h48.811c2.086 0 3.958-1.514 4.168-3.59C59.22 57.028 57.335 55 55 55h-.5a1.5 1.5 0 010-3h6a2.5 2.5 0 002.487-2.758c-.13-1.301-1.322-2.242-2.63-2.242z"
+      />
+      <LinearGradient
+        id="prefix__b"
+        x1={32}
+        x2={32}
+        y1={56}
+        y2={13}
+        gradientUnits="userSpaceOnUse"
+        spreadMethod="reflect"
+      >
+        <Stop offset={0} stopColor="#ff634d" />
+        <Stop offset={0.204} stopColor="#fe6464" />
+        <Stop offset={0.521} stopColor="#fc6581" />
+        <Stop offset={0.794} stopColor="#fa6694" />
+        <Stop offset={0.989} stopColor="#fa669a" />
+        <Stop offset={1} stopColor="#fa669a" />
+      </LinearGradient>
+      <Path
+        fill="url(#prefix__b)"
+        d="M55 13H36v6h-8v-6H9a6 6 0 00-6 6v28a6 6 0 006 6h19.141c.446 1.722 1.997 3 3.859 3s3.412-1.278 3.859-3H55a6 6 0 006-6V19a6 6 0 00-6-6z"
+      />
+      <LinearGradient
+        id="prefix__c"
+        x1={19.5}
+        x2={19.5}
+        y1={49}
+        y2={10}
+        gradientUnits="userSpaceOnUse"
+        spreadMethod="reflect"
+      >
+        <Stop offset={0} stopColor="#ffd17a" />
+        <Stop offset={1} stopColor="#ffcfa4" />
+      </LinearGradient>
+      <Path
+        fill="url(#prefix__c)"
+        d="M29 49H10a3 3 0 01-3-3V13a3 3 0 013-3h16a6 6 0 016 6v30a3 3 0 01-3 3z"
+      />
+      <LinearGradient
+        id="prefix__d"
+        x1={44.5}
+        x2={44.5}
+        y1={49}
+        y2={10}
+        gradientUnits="userSpaceOnUse"
+        spreadMethod="reflect"
+      >
+        <Stop offset={0} stopColor="#ffd685" />
+        <Stop offset={1} stopColor="#ffd4ad" />
+      </LinearGradient>
+      <Path
+        fill="url(#prefix__d)"
+        d="M35 49h19a3 3 0 003-3V13a3 3 0 00-3-3H38a6 6 0 00-6 6v30a3 3 0 003 3z"
+      />
+      <LinearGradient
+        id="prefix__e"
+        x1={15.5}
+        x2={15.5}
+        y1={31}
+        y2={10}
+        gradientUnits="userSpaceOnUse"
+        spreadMethod="reflect"
+      >
+        <Stop offset={0} stopColor="#ffd79f" />
+        <Stop offset={1} stopColor="#ffd5af" />
+      </LinearGradient>
+      <Path
+        fill="url(#prefix__e)"
+        d="M7 13a3 3 0 013-3h12a2.002 2.002 0 011.973 2.336c-.16.983-1.084 1.664-2.08 1.664H14.5a1.5 1.5 0 000 3H16a2.002 2.002 0 011.973 2.336c-.16.983-1.084 1.664-2.08 1.664H7v-8zm9 14a2 2 0 10-.001 3.999A2 2 0 0016 27z"
+      />
+      <LinearGradient
+        id="prefix__f"
+        x1={39.5}
+        x2={39.5}
+        y1={28}
+        y2={10}
+        gradientUnits="userSpaceOnUse"
+        spreadMethod="reflect"
+      >
+        <Stop offset={0} stopColor="#ffdab9" />
+        <Stop offset={1} stopColor="#ffdab9" />
+      </LinearGradient>
+      <Path
+        fill="url(#prefix__f)"
+        d="M46.973 18.664c-.16-.983-1.084-1.664-2.08-1.664H38.5a1.5 1.5 0 010-3H41a2.002 2.002 0 001.973-2.336c-.16-.983-1.084-1.664-2.08-1.664H38a6 6 0 00-6 6v12h4.893c.996 0 1.92-.681 2.08-1.664A2.002 2.002 0 0037 24h-.607a1.5 1.5 0 010-3H45a2.002 2.002 0 001.973-2.336z"
+      />
+      <LinearGradient
+        id="prefix__g"
+        x1={45}
+        x2={45}
+        y1={37}
+        y2={8}
+        gradientUnits="userSpaceOnUse"
+        spreadMethod="reflect"
+      >
+        <Stop offset={0} stopColor="#ff634d" />
+        <Stop offset={0.204} stopColor="#fe6464" />
+        <Stop offset={0.521} stopColor="#fc6581" />
+        <Stop offset={0.794} stopColor="#fa6694" />
+        <Stop offset={0.989} stopColor="#fa669a" />
+        <Stop offset={1} stopColor="#fa669a" />
+      </LinearGradient>
+      <Path
+        fill="url(#prefix__g)"
+        d="M48.59 37h-.006a1.41 1.41 0 01-.997-.413L45 34l-2.587 2.587a1.41 1.41 0 01-.997.413h-.006A1.41 1.41 0 0140 35.59V11a3 3 0 013-3h4a3 3 0 013 3v24.59A1.41 1.41 0 0148.59 37z"
+      />
+    </Svg>
+  )
+}
+
+export default SvgComponent
