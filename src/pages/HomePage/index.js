@@ -1,10 +1,11 @@
 import React from 'react';
 import {View, Text, ScrollView, StyleSheet} from 'react-native';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 import {WebView} from 'react-native-webview';
 import Card from '../../components/Card';
 import HeaderCustom from '../../components/HeaderCustom';
 
-const Homepage = () => {
+const Homepage = ({navigation}) => {
   return (
     <ScrollView>
       <HeaderCustom />
@@ -22,14 +23,18 @@ const Homepage = () => {
           </View>
           <Text style={styles.titleHeading}>Layanan</Text>
           <View style={styles.contentContainer}>
-            <Card
-              title="Buku tamu"
-              img={require('../../assets/icon/icons-bookmark.png')}
-            />
-            <Card
-              title="Penilaian"
-              img={require('../../assets/icon/icons-bookmark.png')}
-            />
+            <TouchableOpacity onPress={() => navigation.navigate('BukuTamu')}>
+              <Card
+                title="Buku tamu"
+                img={require('../../assets/icon/icons-bookmark.png')}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('FeedBack')}>
+              <Card
+                title="Penilaian"
+                img={require('../../assets/icon/icons-bookmark.png')}
+              />
+            </TouchableOpacity>
             <Card
               title="Next"
               img={require('../../assets/icon/icons-bookmark.png')}

@@ -3,7 +3,7 @@ import React from 'react';
 import {View, Text, TextInput, StyleSheet, Button} from 'react-native';
 import HeaderCustom from '../../components/HeaderCustom';
 
-const Homepage = () => {
+const BukuTamu = () => {
   return (
     <View style={{flex: 1}}>
       <HeaderCustom />
@@ -27,7 +27,7 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default BukuTamu;
 
 const styles = StyleSheet.create({
   container: {
