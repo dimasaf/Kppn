@@ -1,15 +1,13 @@
 import React from 'react';
-import {View, Text, ScrollView, StyleSheet, Image} from 'react-native';
-import {Header} from 'react-native-elements';
+import {View, Text, ScrollView, StyleSheet} from 'react-native';
 import {WebView} from 'react-native-webview';
-import logo from '../../assets/logo.png';
+import Card from '../../components/Card';
+import HeaderCustom from '../../components/HeaderCustom';
 
 const Homepage = () => {
   return (
     <ScrollView>
-      <Header containerStyle={styles.header}>
-        <Image source={logo} style={{width: 90, height: 25}} />
-      </Header>
+      <HeaderCustom />
       <View>
         <View>
           <Text style={styles.titleHeading}>Profil</Text>
@@ -22,25 +20,24 @@ const Homepage = () => {
               }}
             />
           </View>
-
           <Text style={styles.titleHeading}>Layanan</Text>
           <View style={styles.contentContainer}>
-            <View style={styles.contentCard}>
-              <Image source={require('../../assets/icon/icons-bookmark.png')} />
-              <Text style={styles.contentTitle}>Buku Tamu</Text>
-            </View>
-            <View style={styles.contentCard}>
-              <Image source={require('../../assets/icon/icons-bookmark.png')} />
-              <Text style={styles.contentTitle}>Buku Tamu</Text>
-            </View>
-            <View style={styles.contentCard}>
-              <Image source={require('../../assets/icon/icons-bookmark.png')} />
-              <Text style={styles.contentTitle}>Buku Tamu</Text>
-            </View>
-            <View style={styles.contentCard}>
-              <Image source={require('../../assets/icon/icons-bookmark.png')} />
-              <Text style={styles.contentTitle}>Buku Tamu</Text>
-            </View>
+            <Card
+              title="Buku tamu"
+              img={require('../../assets/icon/icons-bookmark.png')}
+            />
+            <Card
+              title="Penilaian"
+              img={require('../../assets/icon/icons-bookmark.png')}
+            />
+            <Card
+              title="Next"
+              img={require('../../assets/icon/icons-bookmark.png')}
+            />
+            <Card
+              title="Next 2"
+              img={require('../../assets/icon/icons-bookmark.png')}
+            />
           </View>
         </View>
       </View>
@@ -51,25 +48,22 @@ const Homepage = () => {
 export default Homepage;
 
 const styles = StyleSheet.create({
-  header: {
-    backgroundColor: '#fff',
-    shadowColor: '#000',
-    padding: 0,
-    shadowOffset: {
-      width: -5,
-      height: 3,
-    },
-    shadowOpacity: 6,
-    shadowRadius: 8,
-
-    elevation: 10,
-  },
   profilContainer: {
     width: 310,
     height: 175,
     backgroundColor: '#f0f0f0',
-    borderRadius: 100,
+    borderRadius: 14,
     alignSelf: 'center',
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 10,
+      height: 10,
+    },
+    shadowOpacity: 2,
+    shadowRadius: 10,
+
+    elevation: 2,
   },
   titleHeading: {
     fontSize: 24,
@@ -82,24 +76,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
-  },
-  contentCard: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: 140,
-    height: 140,
-    backgroundColor: '#fff',
-    margin: 10,
-    borderRadius: 7,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: -5,
-      height: 3,
-    },
-    shadowOpacity: 6,
-    shadowRadius: 8,
-
-    elevation: 10,
   },
   contentTitle: {
     marginTop: 20,

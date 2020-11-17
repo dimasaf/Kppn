@@ -1,6 +1,8 @@
 import React from 'react';
 import {View} from 'react-native';
 import HomePage from './pages/HomePage/index';
+import BukuTamu from './pages/BukuTamu/index';
+import FeedBack from './pages/FeedBack/index';
 
 const app = () => {
   return (
@@ -9,7 +11,9 @@ const app = () => {
       {/* <Props />
       <StateDinamis /> */}
       {/* <Communication /> */}
-      <HomePage />
+      {/* <HomePage /> */}
+      {/* <BukuTamu /> */}
+      <FeedBack />
     </View>
   );
 };

@@ -1,33 +1,35 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {View, Text, TextInput, StyleSheet, Button} from 'react-native';
+import {AirbnbRating} from 'react-native-elements';
 import HeaderCustom from '../../components/HeaderCustom';
 
-const Homepage = () => {
+const FeedBack = () => {
   return (
     <View style={{flex: 1}}>
       <HeaderCustom />
       <View>
         <View style={styles.container}>
           <Text style={styles.titleCenter}>
-            Selamat Datang di Layanan Buku Tamu
+            Silahkan berikan Penilaian pada Pelayanan kami
           </Text>
-          <Text style={styles.titleLable}>Tanggal</Text>
-          <TextInput style={styles.input} />
-          <Text style={styles.titleLable}>Jam</Text>
-          <TextInput style={styles.input} />
-          <Text style={styles.titleLable}>Uraian</Text>
-          <TextInput style={styles.input} />
-          <Text style={styles.titleLable}>Keterangan</Text>
+          <AirbnbRating
+            count={5}
+            defaultRating={4}
+            reviews={['Terrible', 'Bad', 'Okay', 'Good', 'Great']}
+            onFinishRating={() => console.log('onFinishRating()')}
+            showRating
+          />
+          <Text style={styles.titleLable}>Saran</Text>
           <TextInput style={styles.inputBig} />
-          <Button onPress="" title="Submit" color="#009ED6" />
+          <Button onPress="cons" title="Submit" color="#009ED6" />
         </View>
       </View>
     </View>
   );
 };
 
-export default Homepage;
+export default FeedBack;
 
 const styles = StyleSheet.create({
   container: {
@@ -70,7 +72,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   inputBig: {
-    height: 80,
+    height: 120,
     width: 240,
     borderWidth: 1,
     borderRadius: 4,
